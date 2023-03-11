@@ -1,0 +1,835 @@
+
+=============================================================================
+
+    C L A S S  01
+
+=============================================================================
+
+
+- install node.js (just because of npm)
+
+    node --version
+
+        v12.22.12
+
+    npm --version
+
+        6.14.16
+
+
+-----------------------------------------------------------------------------
+
+
+nvm list
+
+    ->  v12.22.12
+        v14.19.2
+        v16.15.0
+        v18.1.0
+         system
+    default -> v12.22.12
+    iojs -> N/A (default)
+    unstable -> N/A (default)
+    node -> stable (-> v18.1.0) (default)
+    stable -> 18.1 (-> v18.1.0) (default)
+
+
+-----------------------------------------------------------------------------
+
+
+nvm install v18.1.0
+
+
+nvm use v18.1.0
+
+
+    node --version
+
+        v18.1.0
+
+    npm --version
+
+        9.5.0
+
+
+-----------------------------------------------------------------------------
+
+
+sudo su
+
+npm install -g @angular/cli
+
+
+    Unsupported engine {
+    npm WARN EBADENGINE   package: '@schematics/angular@15.2.0',
+    npm WARN EBADENGINE   required: {
+
+    npm WARN EBADENGINE     node: '^14.20.0 || ^16.13.0 || >=18.10.0',      <<<------------
+    npm WARN EBADENGINE     npm: '^6.11.0 || ^7.5.6 || >=8.0.0',
+
+    npm WARN EBADENGINE     yarn: '>= 1.13.0'
+    npm WARN EBADENGINE   },
+
+    npm WARN EBADENGINE   current: { node: 'v18.1.0', npm: '9.5.0' }        <<<------------
+
+    npm WARN EBADENGINE }
+
+
+-----------------------------------------------------------------------------
+
+
+nvm ls-remote
+
+
+       v18.9.1
+       v18.10.0
+       v18.11.0
+       v18.12.0   (LTS: Hydrogen)
+       v18.12.1   (LTS: Hydrogen)
+       v18.13.0   (LTS: Hydrogen)
+       v18.14.0   (LTS: Hydrogen)
+       v18.14.1   (LTS: Hydrogen)
+       v18.14.2   (Latest LTS: Hydrogen)
+       v19.0.0
+       v19.0.1
+
+
+
+nvm install v18.14.2
+
+
+    Downloading and installing node v18.14.2...
+    Downloading https://nodejs.org/dist/v18.14.2/node-v18.14.2-linux-x64.tar.xz...
+    ################################################################################################################### 100,0%
+    Computing checksum with sha256sum
+    Checksums matched!
+    Now using node v18.14.2 (npm v9.5.0)
+
+
+
+nvm use v18.14.2
+
+    Now using node v18.14.2 (npm v9.5.0)
+
+
+-----------------------------------------------------------------------------
+
+
+npm install -g @angular/cli
+
+
+    npm WARN deprecated @npmcli/move-file@2.0.1: This functionality has been moved to @npmcli/fs
+    added 232 packages in 17s
+    27 packages are looking for funding
+    run `npm fund` for details
+
+
+-----------------------------------------------------------------------------
+
+
+ng --help
+
+
+ng <command>
+
+Commands:
+  ng add <collection>            Adds support for an external library to your project.
+  ng analytics                   Configures the gathering of Angular CLI usage metrics.
+  ng build [project]             Compiles an Angular application or library into an output directory named dist/ at the
+                                 given output path.                                                           [aliases: b]
+  ng cache                       Configure persistent disk cache and retrieve cache statistics.
+  ng completion                  Set up Angular CLI autocompletion for your terminal.
+  ng config [json-path] [value]  Retrieves or sets Angular configuration values in the angular.json file for the
+                                 workspace.
+  ng deploy [project]            Invokes the deploy builder for a specified project or for the default project in the
+                                 workspace.
+  ng doc <keyword>               Opens the official Angular documentation (angular.io) in a browser, and searches for a
+                                 given keyword.                                                               [aliases: d]
+  ng e2e [project]               Builds and serves an Angular application, then runs end-to-end tests.        [aliases: e]
+  ng extract-i18n [project]      Extracts i18n messages from source code.
+  ng generate                    Generates and/or modifies files based on a schematic.                        [aliases: g]
+  ng lint [project]              Runs linting tools on Angular application code in a given project folder.
+  ng new [name]                  Creates a new Angular workspace.                                             [aliases: n]
+  ng run <target>                Runs an Architect target with an optional custom builder configuration defined in your
+                                 project.
+  ng serve [project]             Builds and serves your application, rebuilding on file changes.              [aliases: s]
+  ng test [project]              Runs unit tests in a project.                                                [aliases: t]
+  ng update [packages..]         Updates your workspace and its dependencies. See https://update.angular.io/.
+  ng version                     Outputs Angular CLI version.                                                 [aliases: v]
+
+Options:
+  --help  Shows a help message for this command in the console.                                                  [boolean]
+
+For more information, see https://angular.io/cli/
+
+
+-----------------------------------------------------------------------------
+
+
+ng version
+
+
+    ? Would you like to enable autocompletion? This will set up your terminal so pressing TAB while typing Angular CLI
+    commands will show possible options and autocomplete arguments. (Enabling autocompletion will modify configuration files
+    in your home directory.) Yes
+    Appended `source <(ng completion script)` to `/home/wolf/.zshrc`. Restart your terminal or run the following to autocomplete `ng` commands:
+
+
+
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 15.2.0
+Node: 18.14.2
+Package Manager: npm 9.5.0
+OS: linux x64
+
+Angular:
+...
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1502.0 (cli-only)
+@angular-devkit/core         15.2.0 (cli-only)
+@angular-devkit/schematics   15.2.0 (cli-only)
+@schematics/angular          15.2.0 (cli-only)
+
+
+-----------------------------------------------------------------------------
+
+
+ mkdir loiane
+
+ cd loiane/
+
+   mkdir crud-angular-spring
+
+   cd crud-angular-spring
+
+
+-----------------------------------------------------------------------------
+
+
+ ng new crud-angular
+
+
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? SCSS   [ https://sass-lang.com/documentation/syntax#scss                ]
+
+CREATE crud-angular/README.md (1065 bytes)
+CREATE crud-angular/.editorconfig (274 bytes)
+CREATE crud-angular/.gitignore (548 bytes)
+CREATE crud-angular/angular.json (2904 bytes)
+CREATE crud-angular/package.json (1043 bytes)
+CREATE crud-angular/tsconfig.json (901 bytes)
+CREATE crud-angular/tsconfig.app.json (263 bytes)
+CREATE crud-angular/tsconfig.spec.json (273 bytes)
+CREATE crud-angular/.vscode/extensions.json (130 bytes)
+CREATE crud-angular/.vscode/launch.json (474 bytes)
+CREATE crud-angular/.vscode/tasks.json (938 bytes)
+CREATE crud-angular/src/favicon.ico (948 bytes)
+CREATE crud-angular/src/index.html (297 bytes)
+CREATE crud-angular/src/main.ts (214 bytes)
+CREATE crud-angular/src/styles.scss (80 bytes)
+CREATE crud-angular/src/assets/.gitkeep (0 bytes)
+CREATE crud-angular/src/app/app-routing.module.ts (245 bytes)
+CREATE crud-angular/src/app/app.module.ts (393 bytes)
+CREATE crud-angular/src/app/app.component.scss (0 bytes)
+CREATE crud-angular/src/app/app.component.html (23115 bytes)
+CREATE crud-angular/src/app/app.component.spec.ts (1091 bytes)
+CREATE crud-angular/src/app/app.component.ts (217 bytes)
+
+✔ Packages installed successfully.
+
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+    Successfully initialized git.
+
+
+-----------------------------------------------------------------------------
+
+
+cd crud-angular/
+
+
+-----------------------------------------------------------------------------
+
+
+git branch
+
+    master
+
+
+git branch -m main
+
+
+
+Git: Os novos comandos git restore e git switch
+https://www.alura.com.br/artigos/git-os-novos-comandos-git-restore-e-git-switch?gclid=Cj0KCQiAgOefBhDgARIsAMhqXA5vudwXgba0nfazai5JBXiHr0OTgJ_Wbs_Q_VwkW-XKKu03ITlJWwgaAkhDEALw_wcB
+
+
+git switch -c developer
+
+
+git branch
+
+  * developer
+  main
+
+
+-----------------------------------------------------------------------------
+
+
+code .
+
+
+-----------------------------------------------------------------------------
+
+
+Angular compiler options
+https://angular.io/guide/angular-compiler-options
+
+
+extensions:
+
+Angular Language Service
+https://marketplace.visualstudio.com/items?itemName=Angular.ng-template
+ext install Angular.ng-template
+
+
+Angular Snippets (Version 13)
+https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2
+
+
+Angular Material 2, Flex layout 1, Covalent 1 & Material icon snippets
+https://marketplace.visualstudio.com/items?itemName=1tontech.angular-material
+
+
+Auto Import
+https://marketplace.visualstudio.com/items?itemName=steoates.autoimport
+
+
+-----------------------------------------------------------------------------
+
+
+loiane / crud-angular-spring
+REST API with Spring Boot and Angular
+https://github.com/loiane/crud-angular-spring
+
+
+=============================================================================
+
+    C L A S S  02
+
+=============================================================================
+
+
+ng serve
+
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   2.04 MB |
+polyfills.js          | polyfills     | 314.28 kB |
+styles.css, styles.js | styles        | 209.87 kB |
+main.js               | main          |  48.10 kB |
+runtime.js            | runtime       |   6.52 kB |
+
+                      | Initial Total |   2.61 MB
+
+Build at: 2023-02-26T00:51:45.655Z - Hash: ebe8e34ca23c330f - Time: 10202ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+✔ Compiled successfully.
+
+
+
+-----------------------------------------------------------------------------
+
+
+Faça o download do Chrome para Linux
+https://www.google.com/intl/pt-BR/chrome/
+
+
+-----------------------------------------------------------------------------
+
+
+Conventional Commits 1.0.0
+https://www.conventionalcommits.org/en/v1.0.0/
+
+Semantic Commit Messages
+https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
+
+
+-----------------------------------------------------------------------------
+
+
+Angular tutorials
+https://angular.io/tutorial
+
+CLI Overview and Command Reference
+https://angular.io/cli
+
+Angular Material
+https://material.angular.io/
+
+Angular Blog
+https://blog.angular.io/
+
+DevTools Overview
+https://angular.io/guide/devtools
+Introducing Angular DevTools
+https://www.youtube.com/watch?v=bavWOHZM6zE&t=3s
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+chrome web store
+Angular DevTools
+https://chrome.google.com/webstore/detail/angular-devtools/ienfalfjdbdpebioblfackkekamfmbnh
+
+
+-----------------------------------------------------------------------------
+
+Install Angular Material
+
+Angular Material
+https://material.angular.io/
+
+
+ng add @angular/material
+
+
+ℹ Using package manager: npm
+✔ Found compatible package version: @angular/material@15.2.0.
+✔ Package information loaded.
+
+The package @angular/material@15.2.0 will be installed and executed.
+
+Would you like to proceed? Yes
+✔ Packages successfully installed.
+
+? Choose a prebuilt theme name, or "custom" for a custom theme: Indigo/Pink        [ Preview: https://material.angular.io?theme=indigo-pink
+]
+
+? Set up global Angular Material typography styles? Yes
+
+? Include the Angular animations module? Include and enable animations
+
+UPDATE package.json (1109 bytes)
+✔ Packages installed successfully.
+
+UPDATE src/app/app.module.ts (502 bytes)
+UPDATE angular.json (3038 bytes)
+UPDATE src/index.html (579 bytes)
+UPDATE src/styles.scss (181 bytes)
+
+
+
+=============================================================================
+
+    C L A S S  03
+
+=============================================================================
+
+
+Note: Add the local repository to Github...
+
+Quick setup — if you’ve done this kind of thing before
+git@github.com:marcusvbrangel/crud-angular.git
+
+
+…or create a new repository on the command line
+echo "# crud-angular" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:marcusvbrangel/crud-angular.git
+git push -u origin developer
+
+
+-----------------------------------------------------------------------------
+
+https://material.angular.io/components/toolbar/overview
+
+API reference for Angular Material toolbar
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+
+-----------------------------------------------------------------------------
+
+
+git push -u origin feature/toolbar
+
+
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.07 KiB | 365.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote:
+
+remote: Create a pull request for 'feature/toolbar' on GitHub by visiting:
+remote:      https://github.com/marcusvbrangel/crud-angular/pull/new/feature/toolbar
+
+remote:
+To github.com:marcusvbrangel/crud-angular.git
+ * [new branch]      feature/toolbar -> feature/toolbar
+Branch 'feature/toolbar' set up to track remote branch 'feature/toolbar' from 'origin'.
+
+
+=============================================================================
+
+    C L A S S  04
+
+=============================================================================
+
+ng generate module courses --routing
+
+or
+
+ng g m courses --routing
+
+
+    CREATE src/app/courses/courses-routing.module.ts (250 bytes)
+    CREATE src/app/courses/courses.module.ts (284 bytes)
+
+
+-----------------------------------------------------------------------------
+
+ng generate component courses/courses
+
+or
+
+ng g c courses
+
+
+    CREATE src/app/courses/courses.component.scss (0 bytes)
+    CREATE src/app/courses/courses.component.html (22 bytes)
+    CREATE src/app/courses/courses.component.spec.ts (606 bytes)
+    CREATE src/app/courses/courses.component.ts (207 bytes)
+    UPDATE src/app/courses/courses.module.ts (364 bytes)
+
+
+=============================================================================
+
+    C L A S S  05
+
+=============================================================================
+
+-----------------------------------------------------------------------------
+
+
+=============================================================================
+
+    C L A S S  06
+
+=============================================================================
+
+
+ng g interface courses/model/course
+
+    CREATE src/app/courses/model/course.ts (28 bytes)
+
+
+
+
+=============================================================================
+
+    C L A S S  07
+
+=============================================================================
+
+
+http://localhost:4200s
+
+
+-----------------------------------------------------------------------------
+
+
+ng generate module shared/app-angular-material
+
+    CREATE src/app/shared/app-angular-material/app-angular-material.module.ts (204 bytes)
+
+
+=============================================================================
+
+    C L A S S  08
+
+=============================================================================
+
+ng generate service courses/services/courses
+
+    CREATE src/app/courses/services/courses.service.spec.ts (362 bytes)
+    CREATE src/app/courses/services/courses.service.ts (136 bytes)
+
+
+
+=============================================================================
+
+    C L A S S  09
+
+=============================================================================
+
+-----------------------------------------------------------------------------
+
+=============================================================================
+
+    C L A S S  10
+
+=============================================================================
+
+
+-----------------------------------------------------------------------------
+
+=============================================================================
+
+    C L A S S  11
+
+
+ng generate module shared
+
+    CREATE src/app/shared/shared.module.ts (192 bytes)
+
+ng generate component shared/components/error-dialog
+
+    CREATE src/app/shared/components/error-dialog/error-dialog.component.scss (0 bytes)
+    CREATE src/app/shared/components/error-dialog/error-dialog.component.html (27 bytes)
+    CREATE src/app/shared/components/error-dialog/error-dialog.component.spec.ts (635 bytes)
+    CREATE src/app/shared/components/error-dialog/error-dialog.component.ts (226 bytes)
+    UPDATE src/app/shared/shared.module.ts (309 bytes)
+
+
+-----------------------------------------------------------------------------
+
+=============================================================================
+
+    C L A S S  12
+
+=============================================================================
+
+
+Material Icons Guide
+https://developers.google.com/fonts/docs/material_icons
+
+Material Icons library
+https://fonts.google.com/icons
+
+
+-----------------------------------------------------------------------------
+
+
+ng generate pipe shared/pipes/category
+
+    CREATE src/app/shared/pipes/category.pipe.spec.ts (195 bytes)
+    CREATE src/app/shared/pipes/category.pipe.ts (221 bytes)
+    UPDATE src/app/shared/shared.module.ts (581 bytes)
+
+
+-----------------------------------------------------------------------------
+
+
+git remote -v
+
+git remote set-url origin git@github.com:marcusvbrangel/crud-angular-spring.git
+
+
+=============================================================================
+
+    C L A S S  13
+
+=============================================================================
+
+
+CRUD Angular + Spring | 13: Ambiente Java + Maven para Spring
+https://www.youtube.com/watch?v=Ge7Em4byou8
+
+
+
+
+=============================================================================
+
+    C L A S S  16
+
+=============================================================================
+
+
+npm run start
+
+
+-----------------------------------------------------------------------------
+
+
+Note: CLEARING WEBPACK CACHE-ANGULAR.JS
+
+    rm crud-angular/.angular/cache/15.2.0/angular-webpack/99c8529d008eebc4b137ebe62886909192932708/0.pack
+
+-----------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
