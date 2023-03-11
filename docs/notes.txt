@@ -688,9 +688,20 @@ Note: CLEARING WEBPACK CACHE-ANGULAR.JS
 -----------------------------------------------------------------------------
 
 
+ng generate component courses/course-form
+
+    CREATE src/app/courses/course-form/course-form.component.scss (0 bytes)
+    CREATE src/app/courses/course-form/course-form.component.html (26 bytes)
+    CREATE src/app/courses/course-form/course-form.component.spec.ts (628 bytes)
+    CREATE src/app/courses/course-form/course-form.component.ts (222 bytes)
+    UPDATE src/app/courses/courses.module.ts (710 bytes)
 
 
------------------------------------------------------------------------------
+=============================================================================
+
+    C L A S S  19
+
+=============================================================================
 
 
 
