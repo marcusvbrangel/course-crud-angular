@@ -1,10 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-course-form',
-  templateUrl: './course-form.component.html',
-  styleUrls: ['./course-form.component.scss']
+    selector: 'app-course-form',
+    templateUrl: './course-form.component.html',
+    styleUrls: ['./course-form.component.scss']
 })
-export class CourseFormComponent {
+export class CourseFormComponent implements OnInit {
+
+    formGroupCourse: FormGroup;
+
+    constructor(private formBuilder: FormBuilder) {
+
+        this.formGroupCourse = this.formBuilder.group({
+            name: [null],
+            category: [null]
+        });
+
+    }
+
+    ngOnInit(): void {
+
+    }
+
+    onSubmit() {
+        console.log('onSubmit');
+    }
+
+    onCancel() {
+        console.log('onCancel');
+    }
+
 
 }
