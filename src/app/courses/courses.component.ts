@@ -17,7 +17,7 @@ export class CoursesComponent implements OnInit {
 
     courses$: Observable<Course[]>;
 
-    displayedColumns: string[];
+
 
     // coursesService: CoursesService;
 
@@ -38,8 +38,6 @@ export class CoursesComponent implements OnInit {
                     return of([])
                 })
             );
-
-        this.displayedColumns = ['_id', 'name', 'category', 'actions'];
 
     }
 

@@ -1,6 +1,6 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { NonNullableFormBuilder } from '@angular/forms';
 import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 
 import { CoursesService } from './../services/courses.service';
@@ -12,24 +12,20 @@ import { CoursesService } from './../services/courses.service';
 })
 export class CourseFormComponent implements OnInit {
 
-    formGroupCourse: FormGroup;
+    formGroupCourse = this.formBuilder.group({
+        name: [''],
+        category: ['']
+    });
 
     horizontalPosition: MatSnackBarHorizontalPosition = 'end';
     verticalPosition: MatSnackBarVerticalPosition = 'top';
 
     constructor(
-        private formBuilder: FormBuilder,
+        private formBuilder: NonNullableFormBuilder,
         private service: CoursesService,
         private snackBar: MatSnackBar,
         private location: Location
-    ) {
-
-        this.formGroupCourse = this.formBuilder.group({
-            name: [null],
-            category: [null]
-        });
-
-    }
+    ) { };
 
     ngOnInit(): void {
 

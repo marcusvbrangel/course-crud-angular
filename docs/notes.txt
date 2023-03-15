@@ -719,7 +719,21 @@ ng generate component courses/course-form
 =============================================================================
 -----------------------------------------------------------------------------
 
+=============================================================================
 
+    C L A S S  24
+
+=============================================================================
+
+-----------------------------------------------------------------------------
+
+ng generate component courses/courses-list
+
+    CREATE src/app/courses/courses-list/courses-list.component.scss (0 bytes)
+    CREATE src/app/courses/courses-list/courses-list.component.html (27 bytes)
+    CREATE src/app/courses/courses-list/courses-list.component.spec.ts (635 bytes)
+    CREATE src/app/courses/courses-list/courses-list.component.ts (226 bytes)
+    UPDATE src/app/courses/courses.module.ts (901 bytes)
 
 -----------------------------------------------------------------------------
 
