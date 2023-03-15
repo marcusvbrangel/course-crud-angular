@@ -52,7 +52,7 @@ export class CoursesComponent implements OnInit {
     }
 
     onAdd() {
-        this.router.navigate(['new'], {relativeTo: this.routeActual});
+        this.router.navigate(['new'], { relativeTo: this.routeActual });
     }
 
 }
