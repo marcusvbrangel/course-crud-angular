@@ -55,4 +55,8 @@ export class CoursesComponent implements OnInit {
         this.router.navigate(['new'], { relativeTo: this.routeActual });
     }
 
+    onEdit(course: Course) {
+        this.router.navigate(['edit', course._id], { relativeTo: this.routeActual });
+    }
+
 }
